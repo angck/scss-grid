@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/margin-scss.css">
+    <style>
+    * {margin: 0; padding: 0; }
+    .clearfix:after {display: block; clear: both; visibility: hidden; content: ""; height: 0;}
+    .clearfix {*zoom: 1;}
+
+    ul {list-style-type: none;}
+    .productItem {margin: 0 auto; position: relative;}
+    .productItem li {height: 70px; float: left; background: rgba(0,0,0, .6);}
+
+    .grid-fix {position: absolute; top: 0; height: 100%;}
+    .grid-fix .row-wrap {height: 100%;}
+    .grid-fix .row-col-1 {height: 100%; background: rgba(0,0,0, .2);}
+    </style>
+</head>
+<body>
+    <div class="productItem row">
+        <ul class="clearfix row-wrap">
+            <li class="row-col-1"></li>
+            <li class="row-col-1"></li>
+            <li class="row-col-1"></li>
+            <li class="row-col-1"></li>
+            <li class="row-col-1"></li>
+            <li class="row-col-1"></li>
+            <li class="row-col-1"></li>
+            <li class="row-col-1"></li>
+            <li class="row-col-1"></li>
+            <li class="row-col-1"></li>
+            <li class="row-col-1"></li>
+            <li class="row-col-1"></li>
+        </ul>
+        <br>
+        <ul class="clearfix row-wrap">
+            <li class="row-col-2"></li>
+            <li class="row-col-2"></li>
+            <li class="row-col-2"></li>
+            <li class="row-col-2"></li>
+            <li class="row-col-2"></li>
+            <li class="row-col-2"></li>
+        </ul>
+        <br>
+        <ul class="clearfix row-wrap">
+            <li class="row-col-3"></li>
+            <li class="row-col-3"></li>
+            <li class="row-col-3"></li>
+            <li class="row-col-3"></li>
+        </ul>
+        <br>
+        <ul class="clearfix row-wrap">
+            <li class="row-col-4"></li>
+            <li class="row-col-4"></li>
+            <li class="row-col-4"></li>
+        </ul>
+        <br>
+        <ul class="clearfix row-wrap">
+            <li class="row-col-6"></li>
+            <li class="row-col-6"></li>
+        </ul>
+        <br>
+        <ul class="clearfix row-wrap">
+            <li class="row-col-4"></li>
+            <li class="row-col-8"></li>
+        </ul>
+        <br>
+        <ul class="clearfix row-wrap">
+            <li class="row-col-3"></li>
+            <li class="row-col-9"></li>
+        </ul>
+        <br>
+        <ul class="clearfix row-wrap">
+            <li class="row-col-12"></li>
+        </ul>
+        <div class="grid-fix row">
+            <div class="row-wrap">
+                <div class="row-col-1"></div>
+                <div class="row-col-1"></div>
+                <div class="row-col-1"></div>
+                <div class="row-col-1"></div>
+                <div class="row-col-1"></div>
+                <div class="row-col-1"></div>
+                <div class="row-col-1"></div>
+                <div class="row-col-1"></div>
+                <div class="row-col-1"></div>
+                <div class="row-col-1"></div>
+                <div class="row-col-1"></div>
+                <div class="row-col-1"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

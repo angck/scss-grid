@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+$column-width: 70px !default;
+$gutter-width: 14px !default;
+$column: 12 !default;
+
+@function width($column: $column) {
+    @return ($column-width + $gutter-width) * $column - $gutter-width;
+}
+
+@mixin marginGrid() {
+    .row {
+        width: width();
+    }
+
+    .row-wrap {
+        margin: 0 -#{$gutter-width} 0 0;
+    }
+
+    @for $i from 1 through 12 {
+        .row-col-#{$i} {
+            width: width($i);
+            margin: 0 $gutter-width 0 0;
+            float: left;
+        }
+    }
+}
+
+@mixin paddingGrid() {
+    .row {
+        width: width();
+    }
+
+    .row-wrap {
+        margin: 0 -#{$gutter-width / 2};
+    }
+
+    @for $i from 1 through 12 {
+        .row-col-#{$i} {
+            width: width($i);
+            padding: 0 $gutter-width / 2;
+            float: left;
+        }
+    }
+}
